@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云计算实验二</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 60px 20px;
+      font-family: "Microsoft YaHei", sans-serif;
+      background: #f0f5fa;
+      color: #243247;
+      line-height: 1.8;
+    }
+    main {
+      max-width: 760px;
+      margin: auto;
+      padding: 32px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px #24324715;
+    }
+    h1 { color: #165dcc; }
+    button {
+      padding: 12px 24px;
+      background: #165dcc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>云计算实验二</h1>
+    <h2>云环境下的服务器环境搭建</h2>
+    <p><strong>实验作者：</strong>fjbi</p>
+    <p><strong>使用平台：</strong>GitHub Pages</p>
+
+    <h2>实验目的</h2>
+    <p>了解云平台上静态网页的发布过程，掌握创建仓库、
+      编写网页、配置托管服务和验证访问的方法。</p>
+
+    <h2>我的第一个云端网页</h2>
+    <p>Hello World！欢迎访问我的实验页面。</p>
+    <p>本页面使用 HTML 编写内容，使用 CSS 设置样式，
+      使用 JavaScript 实现按钮交互。</p>
+
+    <button type="button" onclick="showMessage()">点击测试交互</button>
+    <p id="message" aria-live="polite">等待点击按钮……</p>
+  </main>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "交互测试成功！当前时间：" + new Date().toLocaleString("zh-CN");
+    }
+  </script>
+</body>
+</html>
